@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman Kumar Maurya | Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0f172a;
+            color: #e5e7eb;
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        header {
+            background-color: #020617;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #38bdf8;
+        }
+
+        nav a {
+            margin-left: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 3rem;
+        }
+
+        section {
+            margin-top: 2.5rem;
+        }
+
+        section h2 {
+            font-size: 1.4rem;
+            margin-bottom: 0.7rem;
+            color: #f9fafb;
+        }
+
+        .intro {
+            margin-top: 1.5rem;
+        }
+
+        .intro h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            color: #f9fafb;
+        }
+
+        .intro p {
+            color: #d1d5db;
+            margin-bottom: 1rem;
+        }
+
+        .btn-group a {
+            display: inline-block;
+            padding: 0.6rem 1.2rem;
+            border-radius: 999px;
+            font-size: 0.9rem;
+            margin-right: 0.7rem;
+            margin-bottom: 0.7rem;
+        }
+
+        .btn-primary {
+            background: #38bdf8;
+            color: #020617;
+        }
+
+        .btn-primary:hover {
+            background: #0ea5e9;
+        }
+
+        .btn-outline {
+            border: 1px solid #38bdf8;
+            color: #e5e7eb;
+        }
+
+        .btn-outline:hover {
+            background: #1e293b;
+        }
+
+        .about p {
+            color: #d1d5db;
+        }
+
+        .languages-list,
+        .projects-list {
+            list-style: none;
+            margin-top: 0.5rem;
+        }
+
+        .languages-list li,
+        .projects-list li {
+            background-color: #020617;
+            border: 1px solid #1e293b;
+            border-radius: 0.4rem;
+            padding: 0.6rem 0.8rem;
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .project-title {
+            font-weight: bold;
+            color: #e5e7eb;
+        }
+
+        .project-desc {
+            font-size: 0.9rem;
+            color: #d1d5db;
+        }
+
+        /* Contact section */
+        .contact p {
+            color: #d1d5db;
+            margin-bottom: 0.4rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            border-top: 1px solid #1e293b;
+            font-size: 0.85rem;
+            color: #6b7280;
+        }
+
+        @media (max-width: 640px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav {
+                margin-top: 0.5rem;
+            }
+
+            .intro h1 {
+                font-size: 1.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Aman Kumar Maurya</div>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#languages">Languages</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <!-- Name / short intro with LinkedIn & GitHub buttons -->
+    <section class="intro">
+        <h1>Aman Kumar Maurya</h1>
+        <p>
+            Student developer interested in programming, problem solving, and web development.
+            I enjoy building small projects and improving my skills step by step.
+        </p>
+        <div class="btn-group">
+            <a href="https://www.linkedin.com/in/aman-kumar-maurya-1134bb35" class="btn-primary" target="_blank" rel="noopener">View LinkedIn</a>
+            <a href="https://github.com/amankrmaurya369" class="btn-outline" target="_blank" rel="noopener">View GitHub</a>
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+            I am a computer science student with a strong interest in technology and innovation. I enjoy learning new skills, working on practical projects, and improving my problem‑solving abilities.
+        </p>
+    </section>
+
+    <!-- Programming languages section -->
+    <section id="languages">
+        <h2>Programming Languages</h2>
+        <ul class="languages-list">
+            <li>C</li>
+            <li>Python</li>
+            <li>HTML</li>
+            <li>CSS</li>
+        </ul>
+    </section>
+
+    <!-- Projects section (only two projects) -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul class="projects-list">
+            <li>
+                <div class="project-title">Calculator Website</div>
+                <div class="project-desc">
+                    A basic calculator website built using HTML, CSS, and JavaScript to perform simple arithmetic operations.
+                </div>
+            </li>
+            <li>
+                <div class="project-title">Portfolio Website</div>
+                <div class="project-desc">
+                    This portfolio website created with HTML and CSS to showcase my projects, skills, and profile.
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>
+            Email:
+            <a href="https://amasnila3@gmail.com">amasnila3@gmail.com</a>
+
+        </p>
+        <p>Location: Bhadohi, Uttar Pradesh, India</p>
+    </section>
+
+</main>
+
+<footer>
+    © <span id="year"></span> Aman Kumar Maurya. All rights reserved.
+</footer>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
